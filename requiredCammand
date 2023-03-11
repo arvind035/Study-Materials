@@ -1,3 +1,8 @@
 import pandas_profiling as pf
 report = pf.ProfileReport(data)
 report.to_file("output.html")
+
+
+import sweetviz as sv
+my_report = sv.analyze(data)
+my_report.show_html()
